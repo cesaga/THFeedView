@@ -79,7 +79,22 @@ public class THFeedLayouts {
         section.orthogonalScrollingBehavior = .continuous
         
         return section
-        
     }
     
+    public class func estimatedContentLayout() -> NSCollectionLayoutSection {
+        
+        let estimatedHeight = CGFloat(5)
+        
+        let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(estimatedHeight))
+        
+        let item = NSCollectionLayoutItem(layoutSize: layoutSize)
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: layoutSize, subitem: item, count: 1)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 12
+        section.contentInsets = .init(top: 0, leading: 16, bottom: 0, trailing: 16)
+        
+        return section
+    }
 }

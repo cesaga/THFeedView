@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DBB27A3F25C44D4300FD7254 /* CarouselSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB27A3E25C44D4300FD7254 /* CarouselSectionController.swift */; };
 		DBB27A4425C44D5B00FD7254 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB27A4325C44D5B00FD7254 /* CarouselCell.swift */; };
+		DBB314DC25C86F820071DB5A /* EstimateContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB314DA25C86F820071DB5A /* EstimateContentCell.swift */; };
+		DBB314DD25C86F820071DB5A /* EstimateContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB314DB25C86F820071DB5A /* EstimateContentCell.xib */; };
+		DBB314E225C870920071DB5A /* EstimateContentSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB314E125C870920071DB5A /* EstimateContentSectionController.swift */; };
 		E20EE14A246A35F4006B8A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE149246A35F4006B8A2E /* AppDelegate.swift */; };
 		E20EE14C246A35F4006B8A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE14B246A35F4006B8A2E /* SceneDelegate.swift */; };
 		E20EE14E246A35F4006B8A2E /* HomeExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE14D246A35F4006B8A2E /* HomeExampleViewController.swift */; };
@@ -84,6 +87,9 @@
 /* Begin PBXFileReference section */
 		DBB27A3E25C44D4300FD7254 /* CarouselSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSectionController.swift; sourceTree = "<group>"; };
 		DBB27A4325C44D5B00FD7254 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		DBB314DA25C86F820071DB5A /* EstimateContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateContentCell.swift; sourceTree = "<group>"; };
+		DBB314DB25C86F820071DB5A /* EstimateContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EstimateContentCell.xib; sourceTree = "<group>"; };
+		DBB314E125C870920071DB5A /* EstimateContentSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateContentSectionController.swift; sourceTree = "<group>"; };
 		E20EE136246A35D3006B8A2E /* Example AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20EE147246A35F4006B8A2E /* Example Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20EE149246A35F4006B8A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +176,16 @@
 			path = Carousel;
 			sourceTree = "<group>";
 		};
+		DBB314D625C86B030071DB5A /* EstimateContent */ = {
+			isa = PBXGroup;
+			children = (
+				DBB314E125C870920071DB5A /* EstimateContentSectionController.swift */,
+				DBB314DA25C86F820071DB5A /* EstimateContentCell.swift */,
+				DBB314DB25C86F820071DB5A /* EstimateContentCell.xib */,
+			);
+			path = EstimateContent;
+			sourceTree = "<group>";
+		};
 		E20EE148246A35F4006B8A2E /* Example Test App */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +222,7 @@
 		E20EE167246A37B1006B8A2E /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				DBB314D625C86B030071DB5A /* EstimateContent */,
 				E2D1F3E224BF599300B25E44 /* QuickRecomendations */,
 				E20EE16D246A3C79006B8A2E /* Trending */,
 				DBB27A3D25C44D0700FD7254 /* Carousel */,
@@ -530,6 +547,7 @@
 				E2C1169625B46F0C007C89A4 /* Example1.json in Resources */,
 				E2B6051524C0DE1200A77C5E /* NavigationButtonView.xib in Resources */,
 				E20EE151246A35F4006B8A2E /* Main.storyboard in Resources */,
+				DBB314DD25C86F820071DB5A /* EstimateContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +591,9 @@
 				E20EE14E246A35F4006B8A2E /* HomeExampleViewController.swift in Sources */,
 				E2D1F3E424BF59B100B25E44 /* QuickRecomendationsSectionController.swift in Sources */,
 				E20EE14A246A35F4006B8A2E /* AppDelegate.swift in Sources */,
+				DBB314E225C870920071DB5A /* EstimateContentSectionController.swift in Sources */,
 				DBB27A4425C44D5B00FD7254 /* CarouselCell.swift in Sources */,
+				DBB314DC25C86F820071DB5A /* EstimateContentCell.swift in Sources */,
 				E2B6051024BF81BD00A77C5E /* QuickRecoBackgroundView.swift in Sources */,
 				E2D1F3D924BE8AC800B25E44 /* TitleHeaderView.swift in Sources */,
 				E20EE14C246A35F4006B8A2E /* SceneDelegate.swift in Sources */,

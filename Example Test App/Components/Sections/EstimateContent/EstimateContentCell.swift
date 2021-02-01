@@ -7,12 +7,10 @@
 //
 
 import UIKit
+import THFeedView
 
-class EstimateContentCell: UICollectionViewCell {
+class EstimateContentCell: UICollectionViewCell, ReusableView, NibLoadableView  {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var titleLabel: UILabel!
+    
 }

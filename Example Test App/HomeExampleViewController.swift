@@ -69,7 +69,8 @@ class HomeExampleViewController: UIViewController {
         feedViewProvider.registeredSections = [
             "trending": TrendingSectionController.self,
             "quickReco": QuickRecomendationsSectionController.self,
-            "carousel" : CarouselSectionController.self
+            "carousel" : CarouselSectionController.self,
+            "estimatedContent" : EstimateContentSectionController.self
         ]
     }
     
